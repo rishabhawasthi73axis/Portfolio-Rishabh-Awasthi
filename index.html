@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishabh Awasthi | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="bg-white text-black dark:bg-gray-900 dark:text-white">
+    <!-- Navbar -->
+    <nav
+      class="fixed w-full z-50 nav-blur px-6 py-4 flex justify-between items-center"
+    >
+      <a href="#home" class="text-2xl font-bold gradient-text">Rishabh</a>
+      <ul class="hidden md:flex gap-8 font-medium">
+        <li>
+          <a href="#home" class="hover:text-cyan-600 dark:hover:text-cyan-400"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#about" class="hover:text-cyan-600 dark:hover:text-cyan-400"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#services"
+            class="hover:text-cyan-600 dark:hover:text-cyan-400"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="hover:text-cyan-600 dark:hover:text-cyan-400"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="hover:text-cyan-600 dark:hover:text-cyan-400"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            href="newone_resume.pdf"
+            target="_blank"
+            class="px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg transition"
+            >📄 Resume </a>
+        </li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        ☀️ Light Mode
+      </button>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center text-center px-6"
+    >
+      <div data-aos="fade-up">
+        <p class="text-lg">👋 Hello, I’m</p>
+        <h1 class="text-5xl md:text-7xl font-bold gradient-text">
+          Rishabh Awasthi
+        </h1>
+        <h2 class="text-2xl md:text-3xl mt-2">
+          AI/ML Engineer | Full-Stack Developer
+        </h2>
+        <p class="mt-4 text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+          I craft modern, user-friendly web apps and AI-powered solutions.
+          Passionate about turning complex problems into simple, elegant
+          designs.
+        </p>
+        <div class="mt-6 flex flex-wrap justify-center gap-4">
+          <a
+            href="#projects"
+            class="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg shadow-lg transition"
+            >View Projects</a
+          >
+          <a
+            href="newone_resume.pdf"
+            target="_blank"
+            class="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-lg shadow-lg transition"
+            >📄 Download Resume</a
+          >
+          <a
+            href="#contact"
+            class="px-6 py-3 border border-cyan-600 hover:bg-cyan-100 dark:hover:bg-cyan-900 rounded-lg transition"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 px-6 bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2
+            class="text-4xl md:text-5xl font-bold mb-6 gradient-text"
+            data-aos="fade-up"
+          >
+            About Me
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto mb-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          ></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Left Content -->
+          <div data-aos="fade-right">
+            <div class="space-y-6">
+              <div class="glass p-6 rounded-xl">
+                <h3
+                  class="text-2xl font-bold mb-4 text-cyan-600 dark:text-cyan-400"
+                >
+                  🚀 Passionate Developer & AI Enthusiast
+                </h3>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  I am a passionate B.Tech student specializing in AI & ML at
+                  Axis Colleges who has an endless curiosity for new and
+                  emerging technologies. My focus is to translate complex
+                  problems into beautiful solutions for the end user using AI
+                  and modern web development.
+                </p>
+              </div>
+
+              <div class="glass p-6 rounded-xl">
+                <h3
+                  class="text-2xl font-bold mb-4 text-cyan-600 dark:text-cyan-400"
+                >
+                  💼 Real-World Experience
+                </h3>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  The experience I gained through hands-on projects from SOFTPRO
+                  India has been enriching. I’ve been able to apply my learning
+                  from class to the world of work in real live projects. Whether
+                  I was finishing dashboards for my Online Book Store project,
+                  or building applications to help healthcare with AI, I enjoy
+                  building real life applications that can lead to change.
+                </p>
+              </div>
+
+              <div class="glass p-6 rounded-xl">
+                <h3
+                  class="text-2xl font-bold mb-4 text-cyan-600 dark:text-cyan-400"
+                >
+                  🌟 Vision & Goals
+                </h3>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  I am motivated by the vision of becoming a adaptable software
+                  engineer who builds innovative, scalable solutions to improve
+                  user experience. My willingness to adapt, solve problems, and
+                  learn about emerging technologies drives my desire to learn
+                  and grow in my craft and work in a field that is constantly
+                  changing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content - Stats & Skills -->
+          <div data-aos="fade-left">
+            <!-- Achievement Stats -->
+            <div class="grid grid-cols-2 gap-6 mb-8">
+              <div
+                class="glass p-6 text-center rounded-xl hover:scale-105 transition"
+              >
+                <div
+                  class="text-3xl font-bold text-cyan-600 dark:text-cyan-400 mb-2"
+                >
+                  6+
+                </div>
+                <div class="text-gray-700 dark:text-gray-300">
+                  Projects Completed
+                </div>
+              </div>
+              <div
+                class="glass p-6 text-center rounded-xl hover:scale-105 transition"
+              >
+                <div
+                  class="text-3xl font-bold text-cyan-600 dark:text-cyan-400 mb-2"
+                >
+                  2+
+                </div>
+                <div class="text-gray-700 dark:text-gray-300">
+                  Years Experience
+                </div>
+              </div>
+              <div
+                class="glass p-6 text-center rounded-xl hover:scale-105 transition"
+              >
+                <div
+                  class="text-3xl font-bold text-cyan-600 dark:text-cyan-400 mb-2"
+                >
+                  10+
+                </div>
+                <div class="text-gray-700 dark:text-gray-300">Technologies</div>
+              </div>
+              <div
+                class="glass p-6 text-center rounded-xl hover:scale-105 transition"
+              >
+                <div
+                  class="text-3xl font-bold text-cyan-600 dark:text-cyan-400 mb-2"
+                >
+                  100%
+                </div>
+                <div class="text-gray-700 dark:text-gray-300">Dedication</div>
+              </div>
+            </div>
+
+            <!-- Core Expertise -->
+            <div class="glass p-6 rounded-xl">
+              <h3 class="text-xl font-bold mb-4 text-center">
+                🛠️ Core Expertise
+              </h3>
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-gray-700 dark:text-gray-300"
+                    >Full-Stack Development</span
+                  >
+                  <div
+                    class="w-32 bg-gray-300 dark:bg-gray-600 rounded-full h-2"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-cyan-500 to-blue-500 h-2 rounded-full"
+                      style="width: 90%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-gray-700 dark:text-gray-300"
+                    >AI/ML Development</span
+                  >
+                  <div
+                    class="w-32 bg-gray-300 dark:bg-gray-600 rounded-full h-2"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-cyan-500 to-blue-500 h-2 rounded-full"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-gray-700 dark:text-gray-300"
+                    >UI/UX Design</span
+                  >
+                  <div
+                    class="w-32 bg-gray-300 dark:bg-gray-600 rounded-full h-2"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-cyan-500 to-blue-500 h-2 rounded-full"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-gray-700 dark:text-gray-300"
+                    >Problem Solving</span
+                  >
+                  <div
+                    class="w-32 bg-gray-300 dark:bg-gray-600 rounded-full h-2"
+                  >
+                    <div
+                      class="bg-gradient-to-r from-cyan-500 to-blue-500 h-2 rounded-full"
+                      style="width: 95%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technology Stack -->
+        <div class="mt-16" data-aos="fade-up">
+          <h3 class="text-2xl font-bold text-center mb-8">
+            🔧 Technology Arsenal
+          </h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+            <div
+              class="glass p-4 text-center hover:scale-110 transition-all duration-300 hover:shadow-xl"
+            >
+              <div class="text-2xl mb-2">⚛️</div>
+              <div class="font-semibold">React</div>
+            </div>
+            <div
+              class="glass p-4 text-center hover:scale-110 transition-all duration-300 hover:shadow-xl"
+            >
+              <div class="text-2xl mb-2">🟢</div>
+              <div class="font-semibold">Node.js</div>
+            </div>
+            <div
+              class="glass p-4 text-center hover:scale-110 transition-all duration-300 hover:shadow-xl"
+            >
+              <div class="text-2xl mb-2">🐍</div>
+              <div class="font-semibold">Python</div>
+            </div>
+            <div
+              class="glass p-4 text-center hover:scale-110 transition-all duration-300 hover:shadow-xl"
+            >
+              <div class="text-2xl mb-2">⚡</div>
+              <div class="font-semibold">JavaScript</div>
+            </div>
+            <div
+              class="glass p-4 text-center hover:scale-110 transition-all duration-300 hover:shadow-xl"
+            >
+              <div class="text-2xl mb-2">🗄️</div>
+              <div class="font-semibold">MongoDB</div>
+            </div>
+            <div
+              class="glass p-4 text-center hover:scale-110 transition-all duration-300 hover:shadow-xl"
+            >
+              <div class="text-2xl mb-2">🎨</div>
+              <div class="font-semibold">CSS</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-12" data-aos="fade-up">
+          <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+            Ready to collaborate on your next big idea? Let's create something
+            amazing together!
+          </p>
+          <a
+            href="#contact"
+            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          >
+            <span class="mr-2">💬</span>
+            Let's Connect
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 sm:py-20 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12 sm:mb-16">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 gradient-text" data-aos="fade-up">Services</h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto" data-aos="fade-up" data-aos-delay="100"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
+          <div class="glass p-6 sm:p-8 hover:scale-105 transition-all duration-300 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-4xl sm:text-5xl mb-4 text-center">💻</div>
+            <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-center text-cyan-600 dark:text-cyan-400">Web Development</h3>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-sm sm:text-base text-center">
+              Creating modern, scalable full-stack applications using cutting-edge technologies. I specialize in building custom web solutions with React, Node.js, and Python, ensuring robust architecture from concept to deployment.
+            </p>
+          </div>
+          
+          <div class="glass p-6 sm:p-8 hover:scale-105 transition-all duration-300 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-4xl sm:text-5xl mb-4 text-center">📱</div>
+            <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-center text-cyan-600 dark:text-cyan-400">Responsive Design</h3>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-sm sm:text-base text-center">
+              Crafting pixel-perfect, mobile-first interfaces that deliver exceptional user experiences across all devices. Every design is optimized for performance, accessibility, and seamless interaction on desktop, tablet, and mobile.
+            </p>
+          </div>
+          
+          <div class="glass p-6 sm:p-8 hover:scale-105 transition-all duration-300 rounded-xl md:col-span-2 xl:col-span-1" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-4xl sm:text-5xl mb-4 text-center">🚀</div>
+            <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-center text-cyan-600 dark:text-cyan-400">Performance Optimization</h3>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-sm sm:text-base text-center">
+              Enhancing application speed and efficiency through advanced optimization techniques. I focus on fast loading times, SEO best practices, and superior user experience to boost engagement and search rankings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 px-6 bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12 gradient-text" data-aos="fade-up">Projects</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto mb-12" data-aos="fade-up" data-aos-delay="100"></div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="glass p-6 hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="Paging-Readers-Books.png"
+              alt="Project 1"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold">Online Book Store</h3>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">
+              A full-stack web application for buying and selling books online.
+              Features include user authentication, dynamic dashboards for users
+              and admins, and a seamless shopping experience.
+            </p>
+            <a
+              href="https://github.com/rishabhawasthi73axis"
+              target="_blank"
+              class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+              >View Project →</a
+            ><br />
+            <a
+              href="https://github.com/rishabhawasthi73axis"
+              target="_blank"
+              class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+              >View Code →</a
+            >
+          </div>
+          <div class="glass p-6 hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
+            <img
+              src="modern-music-player-ui-design-and-audio-media-playback-.jpg"
+              alt="Project 2"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold">Music Player App</h3>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">
+              A modern music player app with a sleek UI and smooth audio
+              playback. Built with React and the Web Audio API for an immersive
+              experience.
+            </p>
+            <a
+              href="https://rishabhawasthi73axis.github.io/MY-Music--Player/"
+              target="_blank"
+              class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+              >View Project →</a
+            ><br />
+            <a
+              href="https://github.com/rishabhawasthi73axis/MY-Music--Player"
+              target="_blank"
+              class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+              >View Code →</a
+            >
+          </div>
+          <div class="glass p-6 hover:scale-105 transition" data-aos="fade-up" data-aos-delay="300">
+            <img
+              src="portfolio.jpeg"
+              alt="Project 3"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold">Portfolio Website</h3>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">
+              A personal portfolio website showcasing my skills, projects, and
+              experience. Designed with a modern aesthetic and optimized for
+              performance and responsiveness.
+            </p>
+            <a
+              href="https://github.com/rishabhawasthi73axis"
+              target="_blank"
+              class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+              >View Project →</a
+            ><br />
+            <a
+              href="https://github.com/rishabhawasthi73axis"
+              target="_blank"
+              class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+              >View Code →</a
+            >
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-6 hover:scale-105 transition" data-aos="fade-up" data-aos-delay="400">
+              <img
+                src="Healthcare-Chatbot.jpg"
+                alt="Project 1"
+                class="w-full h-40 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-xl font-semibold">Health Care Chatbot</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-2">
+                A modern AI-powered healthcare chatbot that helps users identify
+                diseases and symptoms. Features intelligent symptom analysis,
+                personalized health recommendations, and 24/7 medical guidance
+                for better healthcare accessibility.
+              </p>
+              <a
+                href="https://rishabhawasthi73axis.github.io/Healthare_chatbot/"
+                target="_blank"
+                class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+                >View Project →</a
+              ><br />
+              <a
+                href="https://github.com/rishabhawasthi73axis/Healthare_chatbot"
+                target="_blank"
+                class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+                >View Code →</a
+              >
+            </div>
+            <div class="glass p-6 hover:scale-105 transition" data-aos="fade-up" data-aos-delay="500">
+              <img
+                src="to-do.png"
+                alt="Project 2"
+                class="w-full h-40 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-xl font-semibold">To DO List App</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-2">
+                A feature-rich task management application with intuitive UI for
+                organizing daily activities. Includes task creation, editing,
+                deletion, priority levels, due dates, and local storage for
+                persistent data across sessions.
+              </p>
+              <a
+                href="https://rishabhawasthi73axis.github.io/To-Do-List/"
+                target="_blank"
+                class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+                >View Project →</a
+              ><br />
+              <a
+                href="https://github.com/rishabhawasthi73axis/To-Do-List"
+                target="_blank"
+                class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+                >View Code →</a
+              >
+            </div>
+            <div class="glass p-6 hover:scale-105 transition" data-aos="fade-up" data-aos-delay="600">
+              <img
+                src="chatbot.jpeg"
+                alt="Project 3"
+                class="w-full h-40 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-xl font-semibold">Assistant UI ChatGpt</h3>
+              <p class="text-gray-700 dark:text-gray-300 mt-2">
+                An AI-powered conversational assistant built with modern web
+                technologies. Features real-time chat interface, message
+                history, typing indicators, responsive design, and seamless
+                integration with OpenAI's GPT API for intelligent responses.
+              </p>
+              <a
+                href="https://chatgpt-project-by-rishabh-five.vercel.app/"
+                target="_blank"
+                class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+                >View Project →</a
+              ><br />
+              <a
+                href="https://github.com/rishabhawasthi73axis/ChatGpt_Project/tree/main"
+                target="_blank"
+                class="text-cyan-600 dark:text-cyan-400 mt-2 inline-block"
+                >View Code →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <!-- <section id="contact" class="py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6 gradient-text">Get In Touch</h2>
+      <p class="text-gray-700 dark:text-gray-300 mb-6">📧 rishabhawasthi304@gmail.com | 📱 +91 7398159759</p>
+      <a href="mailto:rishabhawasthi304@gmail.com"
+        class="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg shadow-lg">Send Message</a>
+    </div>
+  </section> -->
+    <section id="contact" class="py-20 px-6">
+      <div class="container max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-6 gradient-text" data-aos="fade-up">
+            Get In Touch
+          </h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto" data-aos="fade-up" data-aos-delay="100"></div>
+        </div>
+        <div class="contact-content grid lg:grid-cols-2 gap-12">
+          <div class="contact-info" data-aos="fade-right">
+            <h3 class="text-2xl font-bold mb-4 text-cyan-600 dark:text-cyan-400">Let's Work Together</h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-6">
+              I'm always excited to work on new projects and collaborate with
+              amazing people. Whether you have a project in mind or just want to
+              chat about web development, feel free to reach out!
+            </p>
+
+            <div class="contact-item glass p-4 rounded-lg mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="contact-icon text-2xl">📧</div>
+              <div>
+                <h4 class="font-semibold">Email</h4>
+                <p class="text-gray-700 dark:text-gray-300">rishabhawasthi304@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item glass p-4 rounded-lg mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="contact-icon text-2xl">📱</div>
+              <div>
+                <h4 class="font-semibold">Phone</h4>
+                <p class="text-gray-700 dark:text-gray-300">+91 7398159759</p>
+              </div>
+            </div>
+
+            <div class="contact-item glass p-4 rounded-lg mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="contact-icon text-2xl">📍</div>
+              <div>
+                <h4 class="font-semibold">Location</h4>
+                <p class="text-gray-700 dark:text-gray-300">Kanpur, India</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form glass p-8 rounded-xl" data-aos="fade-left">
+            <div class="form-group mb-4">
+              <label for="name" class="block mb-2 font-semibold">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
+              />
+            </div>
+
+            <div class="form-group mb-4">
+              <label for="email" class="block mb-2 font-semibold">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
+              />
+            </div>
+
+            <div class="form-group mb-4">
+              <label for="subject" class="block mb-2 font-semibold">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                class="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
+              />
+            </div>
+
+            <div class="form-group mb-6">
+              <label for="message" class="block mb-2 font-semibold">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows="5"
+                class="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-200 dark:bg-gray-900">
+      <p class="text-gray-600 dark:text-gray-400">
+        © 2025
+        <a
+          class="btn btn-primary"
+          href="https://www.linkedin.com/in/rishabh-awasthi-up92"
+          target="_blank"
+          ><strong style="color: inherit">Rishabh Awasthi</strong></a
+        >
+        | All Rights Reserved
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      const button = document.querySelector(".theme-toggle");
+
+      function toggleTheme() {
+        document.documentElement.classList.toggle("dark");
+
+        if (document.documentElement.classList.contains("dark")) {
+          button.textContent = "☀️ Light Mode";
+        } else {
+          button.textContent = "🌙 Dark Mode";
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000 });
+    </script>
+  </body>
+</html>
