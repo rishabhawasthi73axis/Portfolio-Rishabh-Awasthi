@@ -29,3 +29,5 @@ Version Control: Git & GitHub
 Deployment: GitHub Pages
 
 📍 Live Demo
+  visit-> https://rishabhawasthi73axis.github.io/Portfolio-Rishabh-Awasthi/#home
+
